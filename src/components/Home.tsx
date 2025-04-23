@@ -4,8 +4,8 @@ const Home = () => {
       <div className="w-[100%] h-[20%] bg-slate-800 flex flex-row">
         <div className="h-[100%] w-[15%] bg-yellow-300">
           <img
-            className="w-[100%] h-[100%] flex hover:scale-110 "
-            src="src\images\jewellery.jpg "
+            className="w-[100%] h-[100%] flex hover:scale-110"
+            src="/images/jewellery.jpg"
             alt=""
           />
         </div>
