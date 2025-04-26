@@ -21,9 +21,9 @@ const Collections = () => {
         <div className="flex flex-row gap-3   ">
           {posters.map((value: posterModel, index: number) => {
             return (
-              <div key={index}  className="relative w-[16%] group rounded-3xl overflow-hidden">
+              <div key={index}  className="relative w-[16%] group rounded-3xl overflow-hidden  ">
                 <img
-                  className=" rounded-3xl w-full h-auto transition-transform duration-500 group-hover:scale-105 hover:underline cursor-pointer"
+                  className="  w-full h-full object-cover rounded-2xl  transition duration-500  group-hover:scale-105  cursor-pointer"
                   src={value.source}
                   alt=""
                 />
