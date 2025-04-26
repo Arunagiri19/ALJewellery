@@ -1,8 +1,11 @@
   
+
 import Footer from './components/Footer'
 
 import Home from './components/Home'
+import Collections from './components/Collections'
 import MainPage from './components/MainPage'
+
 
 function App() {
  
@@ -13,6 +16,7 @@ function App() {
       
       <MainPage/>
       <Home/>
+      <Collections/>
       <Footer/>
     </>
   )
