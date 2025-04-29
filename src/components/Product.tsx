@@ -1,8 +1,6 @@
 const Product = () => {
 
-    const productImg=[
-        
-    ]
+   
   return (
     
     <>
