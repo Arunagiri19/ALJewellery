@@ -18,7 +18,7 @@ const Collections = () => {
     <>
       <div>
         <div className="flex justify-center text-3xl p-3">Our Collections</div>
-        <div className="flex flex-row gap-3   ">
+        <div className="flex flex-col md:flex-col lg:flex-row  gap-3   ">
           {posters.map((value: posterModel, index: number) => {
             return (
               <div key={index}  className="relative w-[16%] group rounded-3xl overflow-hidden  ">

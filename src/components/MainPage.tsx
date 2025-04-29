@@ -1,7 +1,4 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import FacebookIcon from "@mui/icons-material/Facebook";
+
 
 
 const MainPage = () => {
@@ -17,18 +14,13 @@ const MainPage = () => {
           Free Shipping Above INR-2000
         </div>
         <div className="w-[42%] h-[100%] text-white flex justify-end items-center p-5 gap-4">
-          <span>
-            <InstagramIcon />
-          </span>
-          <span>
-            <WhatsAppIcon />
-          </span>
-          <span>
-            <YouTubeIcon />
-          </span>
-          <span>
-            <FacebookIcon />
-          </span>
+          <a href="https://www.youtube.com/" target="_blank">
+
+        <span className="pi pi-instagram"></span>
+        </a>
+        <span className="pi pi-whatsapp"></span>
+        <span className="pi pi-youtube"></span>
+        <span className="pi pi-facebook"></span>
         </div>
       </div>
     </>
