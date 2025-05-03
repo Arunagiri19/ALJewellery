@@ -1,9 +1,37 @@
 import { Link } from "react-router-dom";
+import { Menubar } from "primereact/menubar";
 
 const Home = () => {
+  const items = [
+    {
+      label: "Category",
+
+      items: [
+        {
+          label: "Rings",
+        },
+        {
+          label: "Bracelet",
+        },
+        {
+          label: "Chains",
+        },
+        {
+          label: "Bangles",
+        },
+        {
+          label: "Silver Chains",
+        },
+        {
+          label: "Necklace",
+        },
+        
+      ],
+    },
+  ];
   return (
     <>
-      <div className="w-[100%] h-[15%] flex flex-row">
+      <div className="w-full h-[15%] flex flex-row  ">
         <div className="h-[100%] w-[15%] flex justify-center items-center">
           <Link to="/">
             <img
@@ -15,14 +43,9 @@ const Home = () => {
         </div>
 
         <div className="h-full w-[70%] flex flex-col md:flex-col lg:flex-row justify-center items-center p-3 gap-14 text-black text-lg">
-          <Link to="/homepage" className="hover:underline cursor-pointer">
-            Home
-          </Link>
-
           <Link to="/category" className="hover:underline cursor-pointer">
-            Category
+            <Menubar className="font-  " model={items} />
           </Link>
-
           <Link to="/products" className="hover:underline cursor-pointer">
             Products
           </Link>
