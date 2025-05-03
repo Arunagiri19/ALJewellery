@@ -21,14 +21,14 @@ const Collections = () => {
         <div className="flex flex-col md:flex-col lg:flex-row  gap-2">
           {posters.map((value: posterModel, index: number) => {
             return (
-              <div key={index}  className="relative w-full group rounded-3xl overflow-hidden">
+              <div key={index}  className="relative w-full  group rounded-3xl overflow-hidden ">
                 <img
-                  className="w-full h-full object-cover  transition duration-500  group-hover:scale-105  cursor-pointer"
+                  className="w-full h-[90%] object-cover rounded-3xl transition duration-500  group-hover:scale-105  cursor-pointer"
                   src={value.source}
                   alt=""
                 />
                 <div >
-                <span className="flex justify-center items-center p-2 font-semibold"> {value.title}</span>
+                <span className="flex justify-center items-center p-2 font-semibold">{value.title}</span>
                 </div>
                
               </div>
