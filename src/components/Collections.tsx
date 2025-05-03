@@ -7,7 +7,7 @@ const Collections = () => {
 
   const posters:posterModel[] = [
     { source: "images/anti.webp", title: "Antique" },
-    { source: "images/contaem.jpg", title: "Ant" },
+    { source: "images/contaem.jpg", title: "Contemporary" },
     { source: "images/nakshtra.jpg", title: "Nakshtra ZC" },
     { source: "images/victorian.webp", title: "Victorian" },
     { source: "images/bridal.webp", title: "Bridal" },
