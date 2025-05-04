@@ -18,6 +18,7 @@ import Category from "./components/Category";
 
 function App() {
   return (
+    
     <Router>
       <MainPage />
       <Home />
@@ -39,8 +40,8 @@ function App() {
         <Route path="/contactus" element={<Contact />} />
       </Routes>
       <Footer />
-    </Router>
-  );
-}
+     </Router>
+  )
+};
 
 export default App;

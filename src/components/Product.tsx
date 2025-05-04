@@ -1,3 +1,5 @@
+
+
 const Product = () => {
   const productImg=[
     {src:"/images/productpics/necset.jpg",title1:"Necklace Set", price:"Rs.4000"},
@@ -16,11 +18,8 @@ const Product = () => {
     {src:"/images/productpics/silverc.jpg",title1:"Silver Chain",price:"Rs.3600"},
     {src:"/images/productpics/nec3.jpg",title1:"Necklace",price:"Rs.8600"},
     {src:"/images/productpics/earsilver.jpg",title1:"Silver Ear Ring",price:"Rs.3350"}
-
-
   ]
 
-   
   return (
     
     <>

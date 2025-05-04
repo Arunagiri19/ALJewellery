@@ -34,15 +34,15 @@ const Home = () => {
       <div className="w-full h-[15%] flex flex-row  ">
         <div className="h-[100%] w-[15%] flex justify-center items-center">
           <Link to="/">
-            <img
-              className="w-[70%] h-[150%]"
+            <img 
+              className="w-[90%]"
               src="/images/alj.png"
               alt="Logo"
             />
           </Link>
         </div>
 
-        <div className="h-full w-[70%] flex flex-col md:flex-col lg:flex-row justify-center items-center p-3 gap-14 text-black text-lg">
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center p-4 gap-4 sm0gap-2 md:gap-8 lg:gap-14  text-black text-lg">
           <Link to="/category" className="hover:underline cursor-pointer">
             <Menubar className="font-  " model={items} />
           </Link>

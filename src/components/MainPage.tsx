@@ -21,7 +21,7 @@ const MainPage = () => {
         <a href="https://wa.me/917010336171">
         <span className="pi pi-whatsapp"></span>
         </a>
-        <a href="www.youtube.com/@arunagiri02">
+        <a href="https://youtube.com/@arunagiri02?si=fidlw3NSHTlBMSen">
         <span className="pi pi-youtube"></span>
         </a>
         <a href="https://www.facebook.com/share/1Vx8tKbvuE/">
