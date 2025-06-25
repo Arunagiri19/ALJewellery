@@ -6,7 +6,7 @@ const Profile = () => {
     email: "arunagiriarun02@gmail.com",
     phone: "+91 7010336171",
     address: "132, Mettu Street, Guruvammapettai, Tindivanam",
-    avatar: "src/assets/arun.jpg",
+    avatar: "/images/arun.jpg",
   };
 
   return (
