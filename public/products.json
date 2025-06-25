@@ -1,0 +1,83 @@
+[
+  {
+    "src": "/images/productpics/necset.jpg",
+    "title1": "Necklace Set",
+    "price": "Rs.4000"
+  },
+  {
+    "src": "/images/productpics/brace.jpg",
+    "title1": "Bracelet",
+    "price": "Rs.5000"
+  },
+  {
+    "src": "/images/productpics/silverc.jpg",
+    "title1": "Silver Chain",
+    "price": "Rs.8000"
+  },
+  {
+    "src": "/images/productpics/ring.jpg",
+    "title1": "Ring Gold",
+    "price": "Rs.4800"
+  },
+
+  {
+    "src": "/images/productpics/earsilver.jpg",
+    "title1": "Silver Ear Ring",
+    "price": "Rs.2500"
+  },
+  {
+    "src": "/images/productpics/goldnec.jpg",
+    "title1": "Gold Necklace",
+    "price": "Rs.10000"
+  },
+  {
+    "src": "/images/productpics/silvercset.jpg",
+    "title1": "Silver Chain Set",
+    "price": "Rs.3200"
+  },
+  {
+    "src": "/images/productpics/ring1.jpg",
+    "title1": "Necklace",
+    "price": "Rs.5600"
+  },
+  {
+    "src": "/images/productpics/earr1.jpg",
+    "title1": "Ear Ring",
+    "price": "Rs.5600"
+  },
+  {
+    "src": "/images/productpics/necset3.jpg",
+    "title1": "Necklace Set",
+    "price": "Rs.9600"
+  },
+  {
+    "src": "/images/productpics/nec1.jpg",
+    "title1": "Necklace",
+    "price": "Rs.14600"
+  },
+  {
+    "src": "/images/productpics/silverc2.jpg",
+    "title1": "Silver Chain",
+    "price": "Rs.3200"
+  },
+  {
+    "src": "/images/productpics/nec3.jpg",
+    "title1": "Necklace",
+    "price": "Rs.8600"
+  },
+  {
+    "src": "/images/productpics/earr1.jpg",
+    "title1": "Ear Ring",
+    "price": "Rs.5600"
+  },
+  {
+    "src": "/images/productpics/earsilver.jpg",
+    "title1": "Silver Ear Ring",
+    "price": "Rs.2500"
+  },
+  {
+    "src": "/images/productpics/goldnec.jpg",
+    "title1": "Gold Necklace",
+    "price": "Rs.10000"
+  }
+]

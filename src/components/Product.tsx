@@ -1,45 +1,59 @@
+import { useState, useEffect } from "react";
 
+type productType = {
+  src: string;
+  title1: string;
+  price: string;
+};
 
 const Product = () => {
-  const productImg=[
-    {src:"/images/productpics/necset.jpg",title1:"Necklace Set", price:"Rs.4000"},
-    {src:"/images/productpics/brace.jpg",title1:"Bracelet",price:"Rs.5000"},
-    {src:"/images/productpics/silverc.jpg",title1:"Silver Chain",price:"Rs.8000"},
-    {src:"/images/productpics/ring.jpg",title1:"Ring Gold",price:"Rs.4800"},
-    {src:"/images/productpics/earr1.jpg",title1:"Ear Ring",price:"Rs.5600"},
-    {src:"/images/productpics/earsilver.jpg",title1:"Silver Ear Ring",price:"Rs.2500"},
-    {src:"/images/productpics/bra.jpg",title1:"Ear Ring",price:"Rs.5600"},
-    {src:"/images/productpics/goldnec.jpg",title1:"Gold Necklace",price:"Rs.10000"},
-    {src:"/images/productpics/silvercset.jpg",title1:"Silver Chain Set",price:"Rs.3200"},
-    {src:"/images/productpics/ring1.jpg",title1:"Ring",price:"Rs.5600"},
-    {src:"/images/productpics/necset3.jpg",title1:"Necklace Set",price:"Rs.9600"},
-    {src:"/images/productpics/nec1.jpg",title1:"Necklace",price:"Rs.14600"},
-    {src:"/images/productpics/silverc2.jpg",title1:"Silver Chain",price:"Rs.3200"},
-    {src:"/images/productpics/silverc.jpg",title1:"Silver Chain",price:"Rs.3600"},
-    {src:"/images/productpics/nec3.jpg",title1:"Necklace",price:"Rs.8600"},
-    {src:"/images/productpics/earsilver.jpg",title1:"Silver Ear Ring",price:"Rs.3350"}
-  ]
+  const [productImg, setProductImg] = useState<productType[]>([]);
+  const [cart, setCart] = useState<productType[]>([]);
+
+  useEffect(() => {
+    fetch("public/products.json")
+      .then((res) => res.json())
+      .then((data: productType[]) => setProductImg(data))
+      .catch((error) => console.error("Failed to fetch products:", error));
+  }, []);
+
+  const handleAddToCart = (product: productType) => {
+    setCart((prevCart) => [...prevCart, product]);
+    alert(`${product.title1} added to cart!`);
+  };
 
   return (
-    
     <>
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4">
-          {productImg.map((value,index) => {
-            return (
-              <div key={index}  className="relative w-[100%] group rounded-3xl overflow-hidden ">
-                <img  className="w-full  aspect-square object-cover rounded-2xl   cursor-pointer"
-                  src={value.src}
-                  alt=""
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-2 text-white bg-black bg-opacity-50">
-                <span className="flex justify-start text-sm underline">{value.title1}</span>
-                <span className="flex justify-start text-md ">{value.price}</span>
-                </div>
-              </div>
-            
-            );
-          })}
-        </div>
+      <div className="text-center text-xl font-semibold text-gray-700 mt-4">
+        🛒 Cart Items: {cart.length}
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-gradient-to-b from-white to-gray-100 min-h-screen">
+        {productImg.map((value, index) => (
+          <div
+            key={index}
+            className="relative group overflow-hidden rounded-3xl shadow-lg bg-white transition transform hover:scale-105"
+          >
+            <img
+              className="w-full h-80 object-cover rounded-3xl transition-transform duration-300 group-hover:scale-110"
+              src={value.src}
+              alt={value.title1}
+            />
+
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+              <h3 className="text-lg font-semibold">{value.title1}</h3>
+              <p className="text-sm mt-1">{value.price}</p>
+            </div>
+
+            <button
+              className="absolute top-4 right-4 bg-white text-black text-sm px-3 py-1 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition duration-300"
+              onClick={() => handleAddToCart(value)}
+            >
+              Add to Cart
+            </button>
+          </div>
+        ))}
+      </div>
     </>
   );
 };

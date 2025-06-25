@@ -10,15 +10,14 @@ import Banner from "./components/Banner";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Product from "./components/Product";
-import Homepage from "./components/Homepage";
+import Homepage from "./components/Home";
 import About from "./components/About";
 import Whyus from "./components/Whyus";
 import Contact from "./components/Contact";
-import Category from "./components/Category";
+import Profile from "./components/Profile";
 
 function App() {
   return (
-    
     <Router>
       <MainPage />
       <Home />
@@ -33,15 +32,15 @@ function App() {
           }
         />
         <Route path="/homepage" element={<Homepage />} />
-        <Route path="/category" element={<Category />} />
         <Route path="/products" element={<Product />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/whyus" element={<Whyus />} />
         <Route path="/contactus" element={<Contact />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
-     </Router>
-  )
-};
+    </Router>
+  );
+}
 
 export default App;
