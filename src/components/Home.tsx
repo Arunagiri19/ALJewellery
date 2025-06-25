@@ -30,7 +30,7 @@ const Home = () => {
   ];
   return (
     <>
-      <div className="w-full h-[15%] flex flex-row  ">
+      <div className="w-full h-[15%] flex flex-row">
         <div className="h-[100%] w-[15%] flex justify-center items-center">
           <Link to="/">
             <img className="w-[90%]" src="/images/alj.png" alt="Logo" />
@@ -57,9 +57,9 @@ const Home = () => {
 
         <div className="w-[15%] h-[100%] text-black flex justify-end items-center p-5 gap-4">
           <span className="pi pi-search cursor-pointer"></span>
-          <a href="/profile">
-            <span className="pi pi-user"></span>
-          </a>
+          <Link to="/profile" className=" hover:underline pi pi-user">
+           
+          </Link>
         </div>
       </div>
     </>

@@ -10,7 +10,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-xl">
+    <div className="max-w-3xl mx-auto mt-10 p-6  rounded-2xl shadow-xl bg-blue-200">
       <div className="flex flex-col md:flex-row items-center gap-6">
         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-yellow-400 shadow-lg">
           <img
