@@ -1,68 +1,88 @@
 import { Link } from "react-router-dom";
-import { Menubar } from "primereact/menubar";
 
 const Home = () => {
-  const items = [
-    {
-      label: "Category",
-
-      items: [
-        {
-          label: "Rings",
-        },
-        {
-          label: "Bracelet",
-        },
-        {
-          label: "Chains",
-        },
-        {
-          label: "Bangles",
-        },
-        {
-          label: "Silver Chains",
-        },
-        {
-          label: "Necklace",
-        },
-      ],
-    },
+  const categories = [
+    "Rings",
+    "Bracelet",
+    "Chains",
+    "Bangles",
+    "Silver Chains",
+    "Necklace",
   ];
+
   return (
-    <>
-      <div className="w-full h-[15%] flex flex-row">
-        <div className="h-[100%] w-[15%] flex justify-center items-center">
+    <div className="w-full h-[10vh] shadow-md bg-white text-black">
+      <div className="max-w-7xl h-full mx-auto px-1 flex items-center justify-between">
+
+        <div className="w-[120px]">
           <Link to="/">
-            <img className="w-[90%]" src="/images/alj.png" alt="Logo" />
+            <img
+              src="/images/alj.png"
+              alt="AL Jewellers"
+              className="w-full hover:scale-105 transition-transform duration-300"
+            />
           </Link>
         </div>
 
-        <div className="w-full flex flex-col lg:flex-row justify-center items-center p-4 gap-4 sm0gap-2 md:gap-8 lg:gap-14  text-black text-lg">
-          <Link to="/category" className=" cursor-pointer">
-            <Menubar className="bg-white text-black text-lg" model={items} />
-          </Link>
-          <Link to="/products" className="hover:underline cursor-pointer">
+
+        <nav className="flex flex-col lg:flex-row items-center gap-4 md:gap-8 lg:gap-12 text-sm md:text-base">
+
+          <div className="relative text-black ">
+            <select
+              className="text-black hover:text-amber-400 focus:outline-none cursor-pointer transition duration-200 font-medium"
+              defaultValue=""
+            >
+              <option disabled value="" className="text-black">
+                Select Category
+              </option>
+              {categories.map((cat) => (
+                <option
+                  key={cat}
+                  value={cat}
+                  className="text-black font-semibold text-base  tracking-wide"
+                >
+                  {cat}
+                </option>
+              ))}
+            </select>
+          </div>
+
+
+          <Link
+            to="/products"
+            className="hover:text-amber-400 transition duration-200 font-medium"
+          >
             Products
           </Link>
-          <Link to="/aboutus" className="hover:underline cursor-pointer">
+          <Link
+            to="/aboutus"
+            className="hover:text-amber-400 transition duration-200 font-medium"
+          >
             About Us
           </Link>
-          <Link to="/whyus" className="hover:underline cursor-pointer">
+          <Link
+            to="/whyus"
+            className="hover:text-amber-400 transition duration-200 font-medium"
+          >
             Why Us
           </Link>
-          <Link to="/contactus" className="hover:underline cursor-pointer">
+          <Link
+            to="/contactus"
+            className="hover:text-amber-400 transition duration-200 font-medium"
+          >
             Contact Us
           </Link>
-        </div>
+        </nav>
 
-        <div className="w-[15%] h-[100%] text-black flex justify-end items-center p-5 gap-4">
-          <span className="pi pi-search cursor-pointer"></span>
-          <Link to="/profile" className=" hover:underline pi pi-user">
-           
+
+        <div className="flex items-center gap-4 text-lg">
+          <span className="pi pi-search hover:text-amber-400 cursor-pointer transition" />
+          <Link to="/profile">
+            <span className="pi pi-user hover:text-amber-400 cursor-pointer transition" />
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
