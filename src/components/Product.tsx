@@ -11,7 +11,7 @@ const Product = () => {
   const [cart, setCart] = useState<productType[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/jewellery")
+    fetch("/data/products.json")
       .then((res) => res.json())
       .then((data: productType[]) => setProductImg(data))
       .catch((error) => console.error("Failed to fetch products:", error));

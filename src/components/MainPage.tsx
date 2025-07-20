@@ -5,7 +5,7 @@ const MainPage = () => {
     <>
 
 
-      {/* Top Bar */}
+
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -14,14 +14,13 @@ const MainPage = () => {
 
 
 
-      {/* Top Bar */}
+
       <motion.div
         className="bg-gradient-to-r from-[#2d0b00] via-[#3b1d0d] to-[#2d0b00] w-full h-[7%] flex flex-col md:flex-row shadow-md shadow-yellow-800/20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-        {/* Shipping Notice */}
         <div className="w-full overflow-hidden whitespace-nowrap py-2">
           <motion.div
             animate={{ x: ["100%", "-100%"] }}
@@ -31,9 +30,6 @@ const MainPage = () => {
             🚚 Complimentary Shipping on Orders Over ₹2000 — Because You Deserve the Best 🚚 Complimentary Shipping on Orders Over ₹2000 — Because You Deserve the Best
           </motion.div>
         </div>
-
-
-        {/* Social Media Links */}
         <div className="w-full md:w-[15%] h-full text-white flex justify-center md:justify-end items-center px-3 gap-6 py-2">
           <motion.a
             whileHover={{ scale: 1.2 }}
