@@ -23,7 +23,7 @@ const MainPage = () => {
         <div className="w-full md:w-auto flex justify-center md:justify-end items-center gap-4 mt-2 md:mt-0">
           <motion.a
             whileHover={{ scale: 1.2 }}
-            href="https://www.instagram.com/_.aroon._a?igsh=MWc3MDdmMGp3NjIxeg=="
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-pink-500 transition duration-300"
@@ -32,7 +32,7 @@ const MainPage = () => {
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            href="https://wa.me/917010336171"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-green-400 transition duration-300"
@@ -41,7 +41,7 @@ const MainPage = () => {
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            href="https://youtube.com/@arunagiri02?si=fidlw3NSHTlBMSen"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-red-600 transition duration-300"
@@ -50,7 +50,7 @@ const MainPage = () => {
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            href="https://www.facebook.com/share/1Vx8tKbvuE/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-blue-500 transition duration-300"

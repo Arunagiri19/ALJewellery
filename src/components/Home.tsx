@@ -44,7 +44,7 @@ const Home = () => {
           <Link to="/contactus" className="hover:text-amber-400 transition duration-200 font-medium">Contact Us</Link>
         </nav>
 
-        {/* Icons */}
+     
         <div className="flex items-center justify-center gap-4 text-lg">
           <span className="pi pi-search hover:text-amber-400 cursor-pointer transition" />
           <Link to="/profile">
